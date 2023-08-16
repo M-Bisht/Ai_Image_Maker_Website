@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 5rem 1rem;
+  width: 100%;
+  background-color: darkslateblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.inputContainer {
+  width: 100%;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  width: 50%;
+  height: 5rem;
+  padding: 0.5rem 2rem;
+  font-size: 1.8rem;
+  border: 2px solid white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: none;
+  background-color: transparent;
+  color: white;
+}
+
+input::placeholder {
+  color: white;
+}
+
+button {
+  height: 5rem;
+  width: 10em;
+  font-size: 1.8rem;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  border-left: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: all 100ms ease;
+}
+
+button:active {
+  color: lightgreen;
+}
+
+img {
+  max-width: 90%;
+  border-radius: 10px;
+}
+
+@media (width < 600px) {
+  .inputContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+  input {
+    width: 90%;
+    text-align: center;
+    border-radius: 10px;
+  }
+  button {
+    border-left: 2px solid white;
+    border-radius: 10px;
+  }
+}
